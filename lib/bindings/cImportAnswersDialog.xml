@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<bindings xmlns="http://www.mozilla.org/xbl" xmlns:xbl="http://www.mozilla.org/xbl" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<binding id="cImportAnswersDialog" extends="core.wDialog#cRessourceDialog">
+		<implementation>
+			<field name="titleText">"${transui:m.polls.bo.general.container-selection-title,ucf,js}"</field>
+		
+			<method name="onOpen">
+				<parameter name="sender" />
+				<parameter name="parameters" />
+				<body><![CDATA[
+					this.sender = sender;
+					this.parameters = parameters;
+					document.getAnonymousElementByAttribute(this, 'class', 'dialog-title').setAttribute('value', this.titleText);
+					this.onInitialize();
+				]]></body>
+			</method>
+				
+			<method name="filterAllowed">
+				<parameter name="documentidtype" />
+				<body><![CDATA[
+					var result = [];
+					var allowtypes = this.parameters.allow.split(",");
+					for (var i =0; i < documentidtype.length; i++)
+			  		{
+			  			var data = documentidtype[i];
+			  			if (allowtypes.length == 0)
+			  			{
+			  				result.push(data[0]);
+			  			}
+			  			else
+			  			{ 
+				  			for (var y = 0; y < allowtypes.length; y++)
+				  			{
+				  				if (data[1] == allowtypes[y])
+				  				{
+				  					result.push(data[0]);
+				  					break;
+				  				}
+				  			}
+				  		}
+			  		}
+			  		return result;
+				]]></body>
+			</method>
+			
+			<method name="handleSelected">
+				<parameter name="list" />
+				<body><![CDATA[
+					var selectedItems = list.getSelectedItems();
+					if (selectedItems.length == 0)
+					{
+						return;
+					}
+					
+					var selectedItem = selectedItems[0];
+					if (selectedItem.id)
+					{
+						var params = this.parameters.finalParams;
+						params.sourceId = selectedItem.id;
+						this.sender.importAnswers(params);
+					}
+				]]></body>
+			</method>
+		</implementation>
+	</binding>
+</bindings>

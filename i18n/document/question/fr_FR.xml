@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.polls.document.question" lcid="fr_FR">
+	<include id="m.generic.document.document" />
+	<key id="document-name">question</key>
+	<key id="label">libellé</key>
+	<key id="label-help">Libellé de la question.</key>
+	<key id="description">description</key>
+	<key id="description-help">Description de la question.</key>
+	<key id="poll">sondage</key>
+	<key id="poll-help">Sondage auquel est ratachée cette question.</key>
+	<key id="maxanswers">maximum de réponses</key>
+	<key id="maxanswers-help">Nombre maximum de réponses simultanées que peut choisir le votant pour cette question. Saisissez -1 pour un nombre de réponses illimité.</key>
+</i18n>

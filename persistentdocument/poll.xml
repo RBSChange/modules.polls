@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document xmlns="http://www.rbs.fr/schema/change-document/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.rbs.fr/schema/change-document/1.0 http://www.rbschange.fr/static/schema/change-document/3.5.xsd"
+	model-version="3.5" has-url="false" use-rewrite-url="false" icon="poll">
+	<properties>
+		<add name="description" type="XHTMLFragment" localized="true" />
+		<add name="endDate" type="DateTime" />
+		<add name="showResultsBeforeEnd" type="Boolean" default-value="true" />
+		<add name="allowAnonymousVote" type="Boolean" default-value="false" />
+		<add name="voterCount" type="Integer" default-value="0" min-occurs="1" />
+		<add name="voterIdsSerialized" type="Lob" />
+	</properties>
+	<statuses default="ACTIVE" />
+	<children>
+		<child name="questions" type="modules_polls/question" />
+	</children>
+</document>

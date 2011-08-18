@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.polls.fo" lcid="fr_FR">
+	<key id="percentage-pattern">{value}%</key>
+	<key id="answers">réponses</key>
+	<key id="votes">votes</key>
+	<key id="never">jamais</key>
+	<key id="voters">total des votants</key>
+	<key id="enddate">fin des votes</key>
+	<key id="results-visible-when-finished">Les résultats ne seront visibles qu'après la fin des votes.</key>
+	<key id="must-login-to-vote">Seuls les utilisateurs authentifiés sont autorisés à voter pour ce sondage.</key>
+	<key id="view-results">voir les résultats</key>
+	<key id="view-form">voir le formulaire</key>
+	<key id="question-without-answer">Vous devez répondre à cette question.</key>
+	<key id="question-do-not-allow-more-than-n-answers">Cette question n'autorise pas plus de {maxAnswers} réponses simultanées.</key>
+	<key id="do-not-cheat">N'essayez pas de tricher...</key>
+</i18n>

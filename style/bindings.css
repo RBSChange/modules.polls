@@ -1,0 +1,3 @@
+wdialog[template="polls_ImportAnswers"]{
+	-moz-binding: url(binding:modules.polls.cImportAnswersDialog#cImportAnswersDialog);
+}

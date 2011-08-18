@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blocks>
+	<block type="modules_polls_Poll" icon="poll" dropModels="[modules_polls/poll]" hidden="true" />
+</blocks>

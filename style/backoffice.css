@@ -1,0 +1,13 @@
+treechildren::-moz-tree-image(modules_polls_poll){
+	list-style-image: url(/changeicons/small/poll.png);
+}
+treechildren::-moz-tree-image(modules_polls_question){
+	list-style-image: url(/changeicons/small/question.png);
+}
+treechildren::-moz-tree-image(modules_polls_answer){
+	list-style-image: url(/changeicons/small/ui-boolean-field.png);
+}
+
+wdialog[template="polls_ImportAnswers"] .dialog-header{
+	background: url(/changeicons/small/document.png) transparent center  left no-repeat !important;
+}

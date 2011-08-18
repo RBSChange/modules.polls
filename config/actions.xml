@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+	<action name="createFolder">
+		<parameter name="listWidget" />
+		<body><![CDATA[this.createDocumentEditor('modules_polls_folder', listWidget.getSelectedItems()[0].id);]]></body>
+	</action>
+	<action name="createPoll">
+		<parameter name="listWidget" />
+		<body><![CDATA[this.createDocumentEditor('modules_polls_poll', listWidget.getSelectedItems()[0].id);]]></body>
+	</action>
+	<action name="createQuestion">
+		<parameter name="listWidget" />
+		<body><![CDATA[this.createDocumentEditor('modules_polls_question', listWidget.getSelectedItems()[0].id);]]></body>
+	</action>
+	<action name="createAnswer">
+		<parameter name="listWidget" />
+		<body><![CDATA[this.createDocumentEditor('modules_polls_answer', listWidget.getSelectedItems()[0].id);]]></body>
+	</action>
+	<action name="openImportAnswersDialog">
+		<parameter name="listWidget" />
+		<body><![CDATA[
+			try
+			{
+				if (!this.hasAttribute('data-allowAttributeForAnswers'))
+				{
+					var contents = wCore.executeJSON('polls', 'GetAllowAttributes').contents;
+					this.setAttribute('data-allowAttributeForAnswers', contents.containers);
+				}			
+				var params = { 
+					finalParams: {questionId: listWidget.getSelectedItems()[0].id},
+					allow: this.getAttribute('data-allowAttributeForAnswers'),
+					module: 'list',
+					single: true
+				};
+				getController().openModalDialog(this, 'polls_ImportAnswers', params);
+			}
+			catch (e)
+			{
+				wCore.error('polls.openMediaImportAnswers', [], e);
+			}
+		]]></body>
+	</action>
+	<action name="importAnswers">
+		<parameter name="params" />
+		<body><![CDATA[
+			getController().closeModalDialog(true);
+			this.executeJSON('ImportAnswers', params);
+		]]></body>
+	</action>
+	<action name="onImportAnswersSuccess">
+		<parameter name="result"/>
+		<body><![CDATA[
+			this.refresh();
+		]]></body>
+	</action>			
+	<action name="onImportAnswersError">
+		<parameter name="result"/>
+		<body><![CDATA[
+			this.refresh();
+			this.showErrorMessage(result.contents.errorMessage, result.contents.errorStackTrace);
+		]]></body>
+	</action>
+</actions>

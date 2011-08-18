@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.polls.document.poll" lcid="fr_FR">
+	<include id="m.generic.document.document" />
+	<key id="document-name">sondage</key>
+	<key id="label">libellé</key>
+	<key id="label-help">Libellé du sondage.</key>
+	<key id="description">description</key>
+	<key id="description-help">Description du sondage.</key>
+	<key id="enddate">fin des votes</key>
+	<key id="enddate-help">Date de fin des votes.</key>
+	<key id="showresultsbeforeend">résultats avant la fin</key>
+	<key id="showresultsbeforeend-help">Autoriser ou non à voir les résultats du sondage avant la fin des votes.</key>
+	<key id="allowanonymousvote">autoriser les votes anonymes</key>
+	<key id="allowanonymousvote-help">Autoriser ou non le vote des visiteurs non-enregistrés.</key>
+	<key id="voteridsserialized">identifiants des votants</key>
+	<key id="voteridsserialized-help">Identifiants des votants au sondage.</key>
+</i18n>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+  <binding fileName="modules/useractionlogger/persistentdocument/import/useractionlogger_binding.xml"/>
+  <actiondef modulename="polls" actionname="insert.poll" label="m.polls.bo.useractionlogger.insert-poll"/>
+  <actiondef modulename="polls" actionname="delete.poll" label="m.polls.bo.useractionlogger.delete-poll"/>
+  <actiondef modulename="polls" actionname="insert.question" label="m.polls.bo.useractionlogger.insert-question"/>
+  <actiondef modulename="polls" actionname="insert.answer" label="m.polls.bo.useractionlogger.insert-answer"/>
+  <actiondef modulename="polls" actionname="update.answer" label="m.polls.bo.useractionlogger.update-answer"/>
+  <actiondef modulename="polls" actionname="update.poll" label="m.polls.bo.useractionlogger.update-poll"/>
+  <actiondef modulename="polls" actionname="update.question" label="m.polls.bo.useractionlogger.update-question"/>
+  <actiondef modulename="polls" actionname="move.question" label="m.polls.bo.useractionlogger.move-question"/>
+  <actiondef modulename="polls" actionname="move.answer" label="m.polls.bo.useractionlogger.move-answer"/>
+  <actiondef modulename="polls" actionname="duplicate.poll" label="m.polls.bo.useractionlogger.duplicate-poll"/>
+  <actiondef modulename="polls" actionname="duplicate.question" label="m.polls.bo.useractionlogger.duplicate-question"/>
+  <actiondef modulename="polls" actionname="duplicate.answer" label="m.polls.bo.useractionlogger.duplicate-answer"/>
+  <actiondef modulename="polls" actionname="delete.question" label="m.polls.bo.useractionlogger.delete-question"/>
+</script>

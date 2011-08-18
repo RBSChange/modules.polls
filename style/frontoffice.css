@@ -1,0 +1,9 @@
+.modules-polls form.cmxform label.option-label{
+	float: none;
+	text-align: left;
+	display: inline;
+}
+.modules-polls .votes, .modules-polls .percentage{
+	width: 20%;
+	text-align: center;
+}
