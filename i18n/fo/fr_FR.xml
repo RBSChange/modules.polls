@@ -13,4 +13,6 @@
 	<key id="question-without-answer">Vous devez répondre à cette question.</key>
 	<key id="question-do-not-allow-more-than-n-answers">Cette question n'autorise pas plus de {maxAnswers} réponses simultanées.</key>
 	<key id="do-not-cheat">N'essayez pas de tricher...</key>
+	<key id="up-to-n-answers">Vous pouvez choisir jusqu'à {max} réponses.</key>
+	<key id="unlimited-answers">Vous pouvez choisir autant de réponses que vous le désirez.</key>
 </i18n>

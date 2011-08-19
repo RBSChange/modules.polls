@@ -19,7 +19,8 @@
 			<fieldset tal:define="allowMultipleAnswers question/allowMultipleAnswers">
 				<legend>${question/getLabelAsHtml}</legend>
 				<div class="normal" tal:condition="question/getDescription">${question/getDescriptionAsHtml}</div>
-				<div class="normal" tal:condition="allowMultipleAnswers"></div>
+				<p class="normal" tal:condition="php: question.getMaxAnswers() GT 1">${trans:m.polls.fo.up-to-n-answers,ucf,max=question/getMaxAnswers}</p>
+				<p class="normal" tal:condition="php: question.getMaxAnswers() EQ -1">${trans:m.polls.fo.unlimited-answers,ucf}</p>
 				<ul change:errors="" relKey="question${question/getId}"></ul>
 				<ol>
 					<li tal:repeat="answer question/getChildrenAnswers" class="${php: repeat.answer.odd ? 'odd' : 'even'}">
