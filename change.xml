@@ -7,12 +7,5 @@
 	<description>Polls module</description>
 	<license>os</license>
 	<repository>public</repository>
-	<dependencies>
-		<dependency>
-			<name>change-lib/framework</name>
-			<versions>
-				<version>3.5.0</version>
-			</versions>
-		</dependency>
-	</dependencies>
+	<dependencies></dependencies>
 </change>
