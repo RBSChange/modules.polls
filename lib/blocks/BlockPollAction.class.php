@@ -107,6 +107,6 @@ class polls_BlockPollAction extends website_BlockAction
 		
 		$ps->vote($poll, $votedAnswers, $user);
 			
-		HttpController::getInstance()->redirectToUrl(LinkHelper::getCurrentUrl());
+		change_Controller::getInstance()->redirectToUrl(LinkHelper::getCurrentUrl());
 	}
 }

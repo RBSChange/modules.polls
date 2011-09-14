@@ -14,4 +14,5 @@
   <actiondef modulename="polls" actionname="duplicate.question" label="m.polls.bo.useractionlogger.duplicate-question"/>
   <actiondef modulename="polls" actionname="duplicate.answer" label="m.polls.bo.useractionlogger.duplicate-answer"/>
   <actiondef modulename="polls" actionname="delete.question" label="m.polls.bo.useractionlogger.delete-question"/>
+  <actiondef modulename="polls" actionname="update.poll" label="m.polls.bo.useractionlogger.update-poll"/>
 </script>

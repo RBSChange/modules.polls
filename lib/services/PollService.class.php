@@ -110,8 +110,7 @@ class polls_PollService extends f_persistentdocument_DocumentService
 	private function setCookie($poll)
 	{
 		$id = $poll->getId();
-		$date = date_Calendar::getInstance()->add(date_Calendar::YEAR, 1);
-		setcookie('rbschangevote' . $id, $id, $date->getTimestamp());
+		change_Controller::getInstance()->getRequest()->setCookie('rbschangevote' . $id, $id, 3600 * 24 * 364);
 	}
 	
 	/**
@@ -120,7 +119,7 @@ class polls_PollService extends f_persistentdocument_DocumentService
 	 */
 	private function hasCookie($poll)
 	{
-		return isset($_COOKIE['rbschangevote' . $poll->getId()]);
+		return change_Controller::getInstance()->getRequest()->hasCookie('rbschangevote' . $poll->getId());
 	}
 	
 	/**
