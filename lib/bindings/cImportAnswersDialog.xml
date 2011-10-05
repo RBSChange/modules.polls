@@ -17,31 +17,19 @@
 				]]></body>
 			</method>
 				
-			<method name="filterAllowed">
-				<parameter name="documentidtype" />
+			<method name="isAllowed">
+				<parameter name="selectedItem" />
 				<body><![CDATA[
-					var result = [];
 					var allowtypes = this.parameters.allow.split(",");
-					for (var i =0; i < documentidtype.length; i++)
-			  		{
-			  			var data = documentidtype[i];
-			  			if (allowtypes.length == 0)
-			  			{
-			  				result.push(data[0]);
-			  			}
-			  			else
-			  			{ 
-				  			for (var y = 0; y < allowtypes.length; y++)
-				  			{
-				  				if (data[1] == allowtypes[y])
-				  				{
-				  					result.push(data[0]);
-				  					break;
-				  				}
-				  			}
-				  		}
-			  		}
-			  		return result;
+					var type = selectedItem.type;
+		  			for (var i = 0; i < allowtypes.length; i++)
+		  			{
+		  				if (type == allowtypes[i])
+		  				{
+		  					return true;
+		  				}
+		  			}
+			  		return false;
 				]]></body>
 			</method>
 			
@@ -55,6 +43,12 @@
 					}
 					
 					var selectedItem = selectedItems[0];
+					if (!this.isAllowed(selectedItem))
+					{
+                       	this.setErrorMessage("${transui:m.uixul.bo.dialog.ressource-selector-error-not-allowed,ucf,js}");
+						return;
+					}					
+					
 					if (selectedItem.id)
 					{
 						var params = this.parameters.finalParams;

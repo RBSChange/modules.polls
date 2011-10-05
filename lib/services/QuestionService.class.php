@@ -81,7 +81,7 @@ class polls_QuestionService extends f_persistentdocument_DocumentService
 		}
 		else 
 		{
-			throw new Excexption('Unexpected source container type: ' . get_class($source));
+			throw new Exception('Unexpected source container type: ' . get_class($source));
 		}
 	}
 	
