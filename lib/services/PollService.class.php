@@ -54,7 +54,7 @@ class polls_PollService extends f_persistentdocument_DocumentService
 	
 	/**
 	 * @param polls_persistentdocument_poll $poll
-	 * @param users_persistentdocument_websitefrontenduser $user
+	 * @param users_persistentdocument_user $user
 	 */
 	public function canVote($poll, $user = null)
 	{
@@ -72,7 +72,7 @@ class polls_PollService extends f_persistentdocument_DocumentService
 	/**
 	 * @param polls_persistentdocument_poll $poll
 	 * @param polls_persistentdocument_answers[] $answers
-	 * @param users_persistentdocument_websitefrontenduser $user
+	 * @param users_persistentdocument_user $user
 	 */
 	public function vote($poll, $answers, $user = null)
 	{
