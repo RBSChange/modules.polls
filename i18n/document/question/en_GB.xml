@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.polls.document.question" lcid="en_GB">
+	<include id="m.generic.document.document" />
+  <key id="description">description</key>
+  <key id="description-help">This is the description of the question.</key>
+  <key id="document-name">question</key>
+  <key id="label">label</key>
+  <key id="label-help">This is the label of the question.</key>
+  <key id="maxanswers">maximum answers</key>
+  <key id="maxanswers-help">This is the maximum number of simultaneous answers that the voter can select for this question. Select -1 for an unlimited number of answers.</key>
+  <key id="poll">poll</key>
+  <key id="poll-help">This is the poll with which this question is associated.</key>
+</i18n>

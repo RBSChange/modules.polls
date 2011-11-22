@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.polls.document.poll" lcid="en_GB">
+	<include id="m.generic.document.document" />
+  <key id="allowanonymousvote">allow anonymous votes</key>
+  <key id="allowanonymousvote-help">Allow or forbid unregistered visitors to vote.</key>
+  <key id="description">description</key>
+  <key id="description-help">Poll description.</key>
+  <key id="document-name">poll</key>
+  <key id="enddate">poll end date</key>
+  <key id="enddate-help">End date for voting.</key>
+  <key id="label">label</key>
+  <key id="label-help">Poll label.</key>
+  <key id="showresultsbeforeend">results before the end</key>
+  <key id="showresultsbeforeend-help">Allow or forbid viewing poll results before the end date.</key>
+  <key id="voteridsserialized">voters' identity</key>
+  <key id="voteridsserialized-help">These are the usernames of the poll's voters.</key>
+</i18n>

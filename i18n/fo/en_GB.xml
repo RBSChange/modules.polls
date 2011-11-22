@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.polls.fo" lcid="en_GB">
+  <key id="answers">responses</key>
+  <key id="do-not-cheat">Do not try to cheat…</key>
+  <key id="enddate">poll end date</key>
+  <key id="must-login-to-vote">Only authenticated users are allowed to vote on this poll.</key>
+  <key id="never">never</key>
+  <key id="percentage-pattern">{value}%</key>
+  <key id="question-do-not-allow-more-than-n-answers">This question only allows up to {maxAnswers} simultaneous answers.</key>
+  <key id="question-without-answer">You must answer this question.</key>
+  <key id="results-visible-when-finished">Results will be visible only after the poll ends.</key>
+  <key id="unlimited-answers">You can select as many answers as you wish.</key>
+  <key id="up-to-n-answers">You can select up to {max} answers.</key>
+  <key id="view-form">view form</key>
+  <key id="view-results">view results</key>
+  <key id="voters">total number of voters</key>
+  <key id="votes">votes</key>
+</i18n>
