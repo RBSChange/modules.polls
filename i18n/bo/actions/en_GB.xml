@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.polls.bo.actions" lcid="en_GB">
+  <key id="create_">create</key>
+  <key id="createanswer">create an answer</key>
+  <key id="createpoll">create poll</key>
+  <key id="createquestion">create a question</key>
+  <key id="openimportanswersdialog">import answers from a list or from another question</key>
+</i18n>

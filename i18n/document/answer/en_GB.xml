@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.polls.document.answer" lcid="en_GB">
+  <include id="m.generic.document.document"/>
+  <key id="description">description</key>
+  <key id="description-help">Answer description</key>
+  <key id="document-name">answer</key>
+  <key id="label">label</key>
+  <key id="label-help">Answer label</key>
+  <key id="question">question</key>
+  <key id="question-help">Question with which this answer is associated.</key>
+  <key id="votes">votes for</key>
+  <key id="votes-help">Number of votes for by this answer.</key>
+</i18n>
