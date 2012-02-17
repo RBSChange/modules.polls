@@ -4,8 +4,8 @@
 	
 	<rootfolder module="polls">
 		<folder byLabel="Exemples">
-			<attribute name="description"><![CDATA[<p class="normal">Sondage d'exemple à <em>plusieurs questions</em> sur le temps qu'il fait.</p><p class="normal">Ce sondage est à durée illumitée.</p>]]></attribute>
-			<poll byLabel="Sondage à questions multiples" description-attr="">
+			<attribute name="description"><![CDATA[<p class="normal">Sondage d'exemple à <em>plusieurs questions</em> sur le temps qu'il fait.</p><p class="normal">Ce sondage est à durée illimitée.</p>]]></attribute>
+			<poll byLabel="Sondage à questions multiples" description-attr="" allowAnonymousVote="true">
 				<attribute name="description"><![CDATA[<p class="normal">Question à choix multiple.</p>]]></attribute>
 				<question byLabel="Quel temps fait-il ?" description-attr="" maxAnswers="-1">
 					<answer byLabel="Pluvieux" />

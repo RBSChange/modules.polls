@@ -5,9 +5,9 @@
 </ul>
 
 <h2 change:h="">${poll/getLabelAsHtml}</h2>
-<dl class="inline-list">
+<dl class="inline-list normal-margin">
 	<dt>${trans:m.polls.fo.voters,ucf}</dt>
-	<dd>${poll/getVoterCount}<span> - </span></dd>
+	<dd>${poll/getVoterCount}<span class="separator"> - </span></dd>
 	<dt>${trans:m.polls.fo.enddate,ucf}</dt>
 	<dd tal:condition="poll/getEndDate">${datetime:poll/getUIEndDate}</dd>
 	<dd tal:condition="not:poll/getEndDate">${trans:m.polls.fo.never}</dd>
@@ -15,7 +15,7 @@
 <div class="normal" tal:condition="poll/getDescription">${poll/getDescriptionAsHtml}</div>
 <ul change:errors=""></ul>
 <ol class="document-list" tal:define="showResults poll/canShowResults">
-	<li tal:repeat="question poll/getChildrenQuestions" class="${php: repeat.question.odd ? 'odd' : 'even'}">
+	<li tal:repeat="question poll/getChildrenQuestions" class="${alternateclass:questionIndex}">
 		<h3 change:h="">${question/getLabelAsHtml}</h3>
 		<div class="normal" tal:condition="question/getDescription">${question/getDescriptionAsHtml}</div>
 		<tal:block tal:condition="showResults" tal:define="allowMultipleAnswers question/allowMultipleAnswers">
@@ -27,7 +27,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr tal:repeat="answer question/getChildrenAnswers" class="${php: repeat.answer.odd ? 'odd' : 'even'}">
+					<tr tal:repeat="answer question/getChildrenAnswers" class="${alternateclass:answerIndex}">
 						<td class="answer">
 							${answer/getLabelAsHtml}
 							<div tal:condition="answer/getDescription">${answer/getDescriptionAsHtml}</div>
